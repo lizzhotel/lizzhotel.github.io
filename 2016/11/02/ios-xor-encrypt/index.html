@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no" />
-<meta name="author" content="阶前梧叶" />
+<meta name="author" content="池塘春草" />
 
 
 
@@ -36,8 +36,8 @@
 如果此时知道密文A和密钥B,那么通过异或解密过程为C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS异或(XOR)加密">
-<meta property="og:url" content="http://suqianghotel.com/2016/11/02/ios-xor-encrypt/index.html">
-<meta property="og:site_name" content="阶前梧叶">
+<meta property="og:url" content="https://lizzhotel.github.io/2016/11/02/ios-xor-encrypt/index.html">
+<meta property="og:site_name" content="池塘春草">
 <meta property="og:description" content="源码见文末
 异或简介
 异或，二元运算;
@@ -85,7 +85,7 @@
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
 
-    <link rel="alternative" href="/atom.xml" title="阶前梧叶" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="池塘春草" type="application/atom+xml">
 
 
 
@@ -112,7 +112,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>iOS异或(XOR)加密 | 阶前梧叶</title>
+<title>iOS异或(XOR)加密 | 池塘春草</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -157,11 +157,11 @@
             <img src="/img/avatar.jpg" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">阶前梧叶</a></h1>
+          <h1 class="header-author"><a href="/">池塘春草</a></h1>
         </hgroup>
 
         
-        <p class="header-subtitle">个人技术成长之路</p>
+        <p class="header-subtitle">个人技术进阶之路。</p>
         
 
         
@@ -230,11 +230,9 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:squainghotel@gmail.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="mailto:lizzhotel@gmail.com" title="Email"></a>
                             
-                                <a class="fa 新浪微博" target="_blank" href="http://weibo.com/90hotel" title="新浪微博"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="https://github.com/suqiang" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="https://github.com/lizzhotel" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -278,7 +276,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">阶前梧叶</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">池塘春草</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -286,10 +284,10 @@
                 <img src="/img/avatar.jpg" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">阶前梧叶</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">池塘春草</a></h1>
             </hgroup>
             
-            <p class="header-subtitle">个人技术成长之路</p>
+            <p class="header-subtitle">个人技术进阶之路。</p>
             
             <nav class="header-menu">
                 <ul>
@@ -310,11 +308,9 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:squainghotel@gmail.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="mailto:lizzhotel@gmail.com" title="Email"></a>
                             
-                                <a class="fa 新浪微博" target="_blank" href="http://weibo.com/90hotel" title="新浪微博"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="https://github.com/suqiang" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="https://github.com/lizzhotel" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -399,13 +395,13 @@
 </ul>
 </li>
 </ul>
-<h2 id="iOS代码实现"><a href="#iOS代码实现" class="headerlink" title="iOS代码实现"></a>iOS代码实现</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 客户端内置私钥</span></span><br><span class="line"><span class="keyword">static</span> <span class="built_in">NSString</span> <span class="keyword">const</span> *privateKey = <span class="string">@"ef37c9111210854f5986fc9ebb5548b2ae"</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">NSData</span>(<span class="title">XOREncrypt</span>)</span></span><br><span class="line">- (<span class="built_in">NSData</span> *)xor_decrypt</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> [<span class="keyword">self</span> xor_encrypt];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 加密</span></span><br><span class="line">- (<span class="built_in">NSData</span> *)xor_encrypt</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 获取key的长度</span></span><br><span class="line">    <span class="built_in">NSInteger</span> length = privateKey.length;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 将OC字符串转换为C字符串</span></span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">char</span> *keys = [privateKey cStringUsingEncoding:<span class="built_in">NSASCIIStringEncoding</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> cKey[length];</span><br><span class="line"></span><br><span class="line">    memcpy(cKey, keys, length);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 数据初始化，空间未分配 配合使用 appendBytes</span></span><br><span class="line">    <span class="built_in">NSMutableData</span> *encryptData = [[<span class="built_in">NSMutableData</span> alloc] initWithCapacity:length];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取字节指针</span></span><br><span class="line">    <span class="keyword">const</span> Byte *point = <span class="keyword">self</span>.bytes;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="keyword">self</span>.length; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> l = i % length;                     <span class="comment">// 算出当前位置字节，要和密钥的异或运算的密钥字节</span></span><br><span class="line">        <span class="keyword">char</span> c = cKey[l];</span><br><span class="line">        Byte b = (Byte) ((point[i]) ^ c);       <span class="comment">// 异或运算</span></span><br><span class="line">        [encryptData appendBytes:&amp;b length:<span class="number">1</span>];  <span class="comment">// 追加字节</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> encryptData.copy;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-<h3 id="思考题"><a href="#思考题" class="headerlink" title="思考题"></a>思考题</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">15</span>;</span><br><span class="line"><span class="keyword">int</span> b = <span class="number">20</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="iOS代码实现"><a href="#iOS代码实现" class="headerlink" title="iOS代码实现"></a>iOS代码实现</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 客户端内置私钥</span></div><div class="line"><span class="keyword">static</span> <span class="built_in">NSString</span> <span class="keyword">const</span> *privateKey = <span class="string">@"ef37c9111210854f5986fc9ebb5548b2ae"</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">NSData</span>(<span class="title">XOREncrypt</span>)</span></div><div class="line">- (<span class="built_in">NSData</span> *)xor_decrypt</div><div class="line">&#123;</div><div class="line">    <span class="keyword">return</span> [<span class="keyword">self</span> xor_encrypt];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 加密</span></div><div class="line">- (<span class="built_in">NSData</span> *)xor_encrypt</div><div class="line">&#123;</div><div class="line">    <span class="comment">// 获取key的长度</span></div><div class="line">    <span class="built_in">NSInteger</span> length = privateKey.length;</div><div class="line"></div><div class="line">    <span class="comment">// 将OC字符串转换为C字符串</span></div><div class="line">    <span class="keyword">const</span> <span class="keyword">char</span> *keys = [privateKey cStringUsingEncoding:<span class="built_in">NSASCIIStringEncoding</span>];</div><div class="line"></div><div class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> cKey[length];</div><div class="line"></div><div class="line">    memcpy(cKey, keys, length);</div><div class="line"></div><div class="line">    <span class="comment">// 数据初始化，空间未分配 配合使用 appendBytes</span></div><div class="line">    <span class="built_in">NSMutableData</span> *encryptData = [[<span class="built_in">NSMutableData</span> alloc] initWithCapacity:length];</div><div class="line"></div><div class="line">    <span class="comment">// 获取字节指针</span></div><div class="line">    <span class="keyword">const</span> Byte *point = <span class="keyword">self</span>.bytes;</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="keyword">self</span>.length; i++) &#123;</div><div class="line">        <span class="keyword">int</span> l = i % length;                     <span class="comment">// 算出当前位置字节，要和密钥的异或运算的密钥字节</span></div><div class="line">        <span class="keyword">char</span> c = cKey[l];</div><div class="line">        Byte b = (Byte) ((point[i]) ^ c);       <span class="comment">// 异或运算</span></div><div class="line">        [encryptData appendBytes:&amp;b length:<span class="number">1</span>];  <span class="comment">// 追加字节</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> encryptData.copy;</div><div class="line">&#125;</div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+<h3 id="思考题"><a href="#思考题" class="headerlink" title="思考题"></a>思考题</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">15</span>;</div><div class="line"><span class="keyword">int</span> b = <span class="number">20</span>;</div></pre></td></tr></table></figure>
 <p>不用第三个变量，交换两个变量的值？</p>
 <ul>
 <li>答案(面试装13用)</li>
 </ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">15</span>;</span><br><span class="line"><span class="keyword">int</span> b = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line">a = a ^ b;</span><br><span class="line">b = a ^ b;</span><br><span class="line">a = a ^ b;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">15</span>;</div><div class="line"><span class="keyword">int</span> b = <span class="number">20</span>;</div><div class="line"></div><div class="line">a = a ^ b;</div><div class="line">b = a ^ b;</div><div class="line">a = a ^ b;</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p><a href="https://github.com/suqiang/iOSDemo/blob/master/iOSDemo/Classes/Category/Encrypt/XOR/SQHXOREncryptUtil.m" target="_blank" rel="external">XORDemo源码</a></p>
 
@@ -417,12 +413,12 @@
     
     <div class="copyright">
         <p><span>本文标题:</span><a href="/2016/11/02/ios-xor-encrypt/">iOS异或(XOR)加密</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">阶前梧叶</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">池塘春草</a></p>
         <p><span>发布时间:</span>2016-11-02, 14:19:50</p>
         <p><span>最后更新:</span>2016-11-02, 14:19:50</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/11/02/ios-xor-encrypt/" title="iOS异或(XOR)加密">http://suqianghotel.com/2016/11/02/ios-xor-encrypt/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://suqianghotel.com/2016/11/02/ios-xor-encrypt/　　作者: 阶前梧叶" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/11/02/ios-xor-encrypt/" title="iOS异或(XOR)加密">https://lizzhotel.github.io/2016/11/02/ios-xor-encrypt/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://lizzhotel.github.io/2016/11/02/ios-xor-encrypt/　　作者: 池塘春草" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -433,6 +429,12 @@
 
 
     <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/12/11/my-first-blog/">
+                    我的第一篇博客
+                </a>
+            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -479,7 +481,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"iOS异或(XOR)加密　| 阶前梧叶　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"iOS异或(XOR)加密　| 池塘春草　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -495,9 +497,9 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" data-thread-key="2016/11/02/ios-xor-encrypt/" data-title="iOS异或(XOR)加密" data-url="http://suqianghotel.com/2016/11/02/ios-xor-encrypt/"></div>
+    <div class="ds-thread" data-thread-key="2016/11/02/ios-xor-encrypt/" data-title="iOS异或(XOR)加密" data-url="https://lizzhotel.github.io/2016/11/02/ios-xor-encrypt/"></div>
     <script>
-        var duoshuoQuery = {short_name:"suqiang"};
+        var duoshuoQuery = {short_name:"lizzhotel"};
         var loadComment = function(){
             var d = document, s = d.createElement('script');
             s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
@@ -518,7 +520,9 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/12/11/my-first-blog/" title="上一篇: 我的第一篇博客">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -530,7 +534,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/11/02/ios-xor-encrypt/">iOS异或(XOR)加密</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/ios-tableview-weixin-comment-md/">tableView实现微信朋友圈评论回复功能</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/13/mac-mulit-git-account-config/">Mac多个Git账户配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/17/hexo笔记/">Hexo 简单配置</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/11/my-first-blog/">我的第一篇博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/02/ios-xor-encrypt/">iOS异或(XOR)加密</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/ios-tableview-weixin-comment-md/">tableView实现微信朋友圈评论回复功能</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/13/mac-mulit-git-account-config/">Mac多个Git账户配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/17/hexo笔记/">Hexo 简单配置</a></li></ul>
 
 
 
@@ -544,7 +548,7 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2015-2016 阶前梧叶
+                2015-2016 池塘春草
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.0">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
